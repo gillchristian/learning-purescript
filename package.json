@@ -1,7 +1,10 @@
 {
   "private": true,
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "parcel": "^1.12.4",
+    "postcss": "^7.0.32",
+    "postcss-modules": "^3.2.2",
     "purescript": "^0.13.8",
     "spago": "^0.15.3"
   },
@@ -9,5 +12,8 @@
     "build": "spago build",
     "serve": "parcel dev/index.html --open",
     "build-prod": "mkdir -p prod && cp dev/index.html prod/ && rm -rf dist && spago bundle-app --to prod/index.js && parcel build prod/index.html"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.7.6"
   }
 }
